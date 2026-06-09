@@ -1,0 +1,16 @@
+{
+  "name": "tessl-fe/mobile-client",
+  "mode": "vendored",
+  "dependencies": {
+    "freekmurze/dotfiles": {
+      "version": "ef5ffa09856d06599252e0e2c322f856d7cf355a",
+      "source": "https://github.com/freekmurze/dotfiles",
+      "include": { "skills": ["review-pr"] }
+    },
+    "santosomar/general-secure-coding-agent-skills": {
+      "version": "47d56bbc24dc4560c0afe546edbb34973da79391",
+      "source": "https://github.com/santosomar/general-secure-coding-agent-skills",
+      "include": { "skills": ["code-review-assistant"] }
+    }
+  }
+}
