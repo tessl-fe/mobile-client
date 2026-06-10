@@ -1,0 +1,25 @@
+{
+  "expo": {
+    "name": "Forge",
+    "slug": "forge-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#4F46E5"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "dev.forge.mobile"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#4F46E5"
+      },
+      "package": "dev.forge.mobile"
+    },
+    "scheme": "forge",
+    "plugins": ["expo-router", "expo-secure-store"]
+  }
+}
