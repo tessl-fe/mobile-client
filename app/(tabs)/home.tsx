@@ -30,6 +30,11 @@ export default function HomeScreen() {
       if (err instanceof Error && err.message === 'Session expired') {
         await clearTokens()
         router.replace('/')
+        return
+      }
+      // Network errors during background refresh should not crash the screen
+      if (!refreshing) {
+        setProjects([])
       }
     } finally {
       setLoading(false)
@@ -40,6 +45,7 @@ export default function HomeScreen() {
   useFocusEffect(useCallback(() => { load() }, []))
 
   function onRefresh() {
+    if (refreshing) return
     setRefreshing(true)
     load()
   }
